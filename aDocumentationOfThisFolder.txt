@@ -1,0 +1,12 @@
+This folder was used to do very little changes to Georgs Code, to be clear: only the mistakes he found
+
+
+run.sh runs this script with specific start values, for that it copies the hubb.andpar_bak to hubb.andpar to use it with those values, e.g. 36 processors
+Then we get specific values of V and Epsilon to compare to other Code versions
+for that we use symm = true, U = 2, mu = 1, 2D SC and so on
+
+
+Dont have -g to not activate degug mode and then faster
+use -O3 to be faster
+
+start it with ./run.sh
