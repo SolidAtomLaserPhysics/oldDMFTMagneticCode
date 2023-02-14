@@ -24,10 +24,10 @@ c        in the whole file the only changes are: init.h changed place, number of
       parameter (ksteps=100)                                                                                                                                   
 !Magnetic field parameter definition
       parameter (L=3)
-      parameter (Bm=0.0d0)
+      parameter (Bm=dfloat(1)/dfloat(L))
       !include'init.h'                                        !This had to be commented out, since used above
-      parameter (Iwmax= 2**10)                                  !Use 2**5 to be faster for testing
-      parameter (Iwmaxreal =2**10)
+      parameter (Iwmax= 32768)                                  !Use 2**5 to be faster for testing
+      parameter (Iwmaxreal =2048)
       real*8 tpar(nss),epsk(nss),uhub,hmag,xmu,beta,densimp,pi
       real*8 wlow,wup,deltino,range,sumdos,help1,help2,dens,sum
       real*8 om(0:Iwmax), dos(0:Iwmaxreal),dospart(0:Iwmaxreal)
@@ -922,6 +922,8 @@ c            endif
                   diff(j)=diff(j)+abs(G0w(i)-G0wmat(i,j,j))
                enddo
             enddo
+            write(*,*) sum(G0w)
+            write(*,*) sum(G0wmat)
             do j=2,L
                write(6,*)"Difference to orbital 1 for orbital",j,diff(j)
             enddo
