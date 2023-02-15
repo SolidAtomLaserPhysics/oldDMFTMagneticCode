@@ -2,18 +2,18 @@
                   1-band            30-Sep-95 LANCZOS  
                ========================================
 NSITE    3 IWMAX****
- 30.d0, -12.0, 12.0, 0.01                                   
+ 35.d0, -12.0, 12.0, 0.01                                   
 c ns,imaxmu,deltamu, # iterations, conv.param.              
- 5, 0, 0.d0, 50,  1.d-8                                   
+ 5, 0, 0.d0, 80,  1.d-13                                   
 c ifix(0,1), <n>,   inew, iauto                             
  Eps(k)
-   1.0
-   -1.0
    0.5
+   1.0
    -0.5
+   -1.0
  tpar(k)
    0.25
-   0.1
    0.25
-   0.1
-   1.00000000000000          #chemical potential
+   0.25
+   0.25
+   1.0000000000000          #chemical potential

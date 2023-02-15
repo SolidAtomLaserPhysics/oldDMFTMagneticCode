@@ -922,8 +922,8 @@ c            endif
                   diff(j)=diff(j)+abs(G0w(i)-G0wmat(i,j,j))
                enddo
             enddo
-            write(*,*) sum(G0w)
-            write(*,*) sum(G0wmat)
+            !write(*,*) sum(G0w)                                                                                            !TRy to find similarity between local and HLRN on 14.2.23
+            !write(*,*) sum(G0wmat)
             do j=2,L
                write(6,*)"Difference to orbital 1 for orbital",j,diff(j)
             enddo
