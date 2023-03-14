@@ -4,7 +4,7 @@
 NSITE    3 IWMAX****
  35.d0, -12.0, 12.0, 0.01                                   
 c ns,imaxmu,deltamu, # iterations, conv.param.              
- 5, 0, 0.d0, 80,  1.d-13                                   
+ 5, 0, 0.d0, 1000,  1.d-8                                   
 c ifix(0,1), <n>,   inew, iauto                             
  Eps(k)
    0.5

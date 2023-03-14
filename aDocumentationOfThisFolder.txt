@@ -1,4 +1,5 @@
 This folder was used to do very little changes to Georgs Code (in old Fortran), to be clear: only the mistakes he found
+Additionally the Sampling was improved by what we discussed in february (7.3.23)
 
 
 run.sh runs this script with specific start values, for that it copies the hubb.andpar_bak to hubb.andpar to use it with those values, e.g. 36 processors
